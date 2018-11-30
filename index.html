@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8"/>
+  <title>
+   EarthML — EarthML 0.0.1 documentation
+  </title>
+  <meta content="Python tools for earth science and machine learning" name="description"/>
+  <meta content="Anaconda" name="author"/>
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js">
+  </script>
+  <script>
+   WebFont.load({
+      google: {
+        families: ['Source Sans Pro']
+      }
+    });
+  </script>
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="_static/css/main.css" rel="stylesheet"/>
+  <link href="_static/nbsite.css" rel="stylesheet"/>
+  <link href="_static/site.css" rel="stylesheet"/>
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+  </script>
+  <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+  </script>
+  <script src="_static/js/main.js">
+  </script>
+  <script src="_static/nbsite.js">
+  </script>
+  <script src="_static/require.js">
+  </script>
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="_static/favicon.ico" rel="icon" type="image/png"/>
+  <!-- Canonical
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="/index.html" rel="canonical"/>
+ </head>
+ <body class="">
+  <header class="navigation">
+   <div class="wrapper">
+    <a class="logo" href="#">
+     <img alt="Logo" src="_static/logo.png"/>
+    </a>
+    <a class="navigation-menu logo-text" href="#">
+     EarthML
+    </a>
+    <a class="navigation-menu-button" href="javascript:void(0)" id="js-mobile-menu">
+     Menu
+    </a>
+    <nav>
+     <ul class="navigation-menu show" id="js-navigation-menu">
+      <li class="nav-link">
+       <a href="#">
+        Introduction
+       </a>
+      </li>
+      <li class="nav-link">
+       <a href="tutorial/index.html">
+        Tutorial
+       </a>
+      </li>
+      <li class="nav-link">
+       <a href="topics/index.html">
+        Topics
+       </a>
+      </li>
+      <li class="nav-link">
+       <a href="FAQ.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-link">
+       <a href="about.html">
+        About
+       </a>
+      </li>
+      <li class="nav-link">
+       <div style="display:inline-block;vertical-align: middle;">
+        <div class="search-bar">
+         <form action="search.html" method="get" role="search">
+          <input name="q" placeholder="Search" type="search"/>
+          <button type="submit">
+           <img alt="Search Icon" src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon-black.png"/>
+          </button>
+         </form>
+        </div>
+       </div>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </header>
+  <!-- MAIN BODY OF DOCS –––––––––––––––––– -->
+  <div class="docs section">
+   <div id="hacketyhackhack">
+    <!-- style="width:20%;margin-right: 100px;"> -->
+    <!--style="display: none;"> style="display:none;"> -->
+    <div class="toc" style="width:15%; margin-right:20px;">
+     <ul class="current">
+      <li class="toctree-l1 current">
+       <a class="current reference internal" href="#">
+        Introduction
+       </a>
+      </li>
+      <li class="toctree-l1">
+       <a class="reference internal" href="tutorial/index.html">
+        Tutorial
+       </a>
+      </li>
+      <li class="toctree-l1">
+       <a class="reference internal" href="topics/index.html">
+        Topics
+       </a>
+      </li>
+      <li class="toctree-l1">
+       <a class="reference internal" href="FAQ.html">
+        FAQ
+       </a>
+      </li>
+      <li class="toctree-l1">
+       <a class="reference internal" href="about.html">
+        About
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="content">
+    <!-- style="max-width:80%;margin-left:auto;margin-right: auto;">-->
+    <div class="section" id="earthml">
+     <h1>
+      EarthML
+      <a class="headerlink" href="#earthml" title="Permalink to this headline">
+       ¶
+      </a>
+     </h1>
+     <div style="width: 65%; float:left">
+      <p>
+       <strong>
+        Machine learning and visualization in Python for Earth science
+       </strong>
+      </p>
+      <p>
+       EarthML is a “meta-project” with the aim of illustrating how other,
+freely available, general-purpose open source projects may be used to
+solve problems in this domain:
+      </p>
+      <blockquote>
+       <div>
+        <ul>
+         <li>
+          <dl class="first docutils">
+           <dt>
+            Data libraries:
+           </dt>
+           <dd>
+            <ul class="first last simple">
+             <li>
+              <a class="reference external" href="https://intake.readthedocs.io">
+               Intake
+              </a>
+              : Cleanly loading data from various sources.
+             </li>
+             <li>
+              <a class="reference external" href="http://xarray.pydata.org">
+               XArray
+              </a>
+              : Processing gridded data structures.
+             </li>
+             <li>
+              <a class="reference external" href="http://pandas.pydata.org">
+               Pandas
+              </a>
+              : Processing gridded data structures.
+             </li>
+             <li>
+              <a class="reference external" href="http://dask.pydata.org">
+               Dask
+              </a>
+              : Parallelism and performance at scale.
+             </li>
+            </ul>
+           </dd>
+          </dl>
+         </li>
+         <li>
+          <dl class="first docutils">
+           <dt>
+            Visualization libraries:
+           </dt>
+           <dd>
+            <ul class="first simple">
+             <li>
+              <a class="reference external" href="http://hvplot.pyviz.org">
+               hvPlot
+              </a>
+              : Simple data-centric API for plotting, building on:
+             </li>
+            </ul>
+            <blockquote>
+             <div>
+              <ul class="simple">
+               <li>
+                <a class="reference external" href="http://bokeh.pydata.org">
+                 Bokeh
+                </a>
+                : Interactive browser-based
+plotting.
+               </li>
+               <li>
+                <a class="reference external" href="http://holoviews.org">
+                 HoloViews
+                </a>
+                : Easy construction of Bokeh
+plots for datasets.
+               </li>
+               <li>
+                <a class="reference external" href="http://geoviews.org">
+                 GeoViews
+                </a>
+                : HoloViews with earth-specific
+projections.
+               </li>
+               <li>
+                <a class="reference external" href="https://github.com/bokeh/datashader">
+                 Datashader
+                </a>
+                : Rendering large
+datasets into images for display in browsers.
+               </li>
+              </ul>
+             </div>
+            </blockquote>
+            <ul class="last simple">
+             <li>
+              <a class="reference external" href="https://panel.pyviz.org">
+               Panel
+              </a>
+              : Dashboards, apps, and widgets for any library’s plots.
+             </li>
+            </ul>
+           </dd>
+          </dl>
+         </li>
+         <li>
+          <dl class="first docutils">
+           <dt>
+            Other tools:
+           </dt>
+           <dd>
+            <ul class="first last simple">
+             <li>
+              <a class="reference external" href="http://jupyter.org/">
+               Jupyter
+              </a>
+             </li>
+             <li>
+              <a class="reference external" href="https://scitools.org.uk/cartopy">
+               Cartopy
+              </a>
+             </li>
+            </ul>
+           </dd>
+          </dl>
+         </li>
+         <li>
+          <dl class="first docutils">
+           <dt>
+            ML tools: (representative only – use any you like!)
+           </dt>
+           <dd>
+            <ul class="first last simple">
+             <li>
+              <a class="reference external" href="https://scikit-learn.org">
+               Scikit-learn
+              </a>
+              : General ML for numeric data
+             </li>
+             <li>
+              <a class="reference external" href="https://keras.io">
+               Keras
+              </a>
+              /
+              <a class="reference external" href="https://www.tensorflow.org">
+               TensorFlow
+              </a>
+              /-
+              <a class="reference external" href="https://pytorch.org">
+               PyTorch
+              </a>
+              : Deep learning, images
+             </li>
+            </ul>
+           </dd>
+          </dl>
+         </li>
+        </ul>
+       </div>
+      </blockquote>
+      <p>
+       The EarthML
+       <a class="reference external" href="tutorial">
+        Tutorial
+       </a>
+       offers a general-purpose overview
+of the concepts and tools involved, and the
+       <a class="reference external" href="topics">
+        Topics
+       </a>
+       section
+shows examples of how these tools may be used to perform machine
+learning and related tasks in the Earth sciences, such as:
+      </p>
+      <div style="display: flex; flex-flow: column">
+       <div style="display: flex; flex-flow: row">
+        <a href="topics/Carbon_Flux.html">
+         <img src="_static/collage/carbon.png" width="95%/"/>
+        </a>
+        <a href="topics/Heat_and_Trees.html">
+         <img src="_static/collage/trees.png" width="95%/"/>
+        </a>
+       </div>
+       <br/>
+       <div style="display: flex; flex-flow: row">
+        <a href="topics/Walker_Lake.html">
+         <img src="_static/collage/walker.png" width="95%/"/>
+        </a>
+        <a href="topics/Image_Classification.html">
+         <img src="_static/collage/classifier.png" width="95%/"/>
+        </a>
+       </div>
+       <br/>
+       <div style="display: flex; flex-flow: row">
+        <a href="topics/Landsat_Spectral_Clustering.html">
+         <img src="_static/collage/cluster.png" width="95%/"/>
+        </a>
+        <a href="topics/Landsat_Classifier_Ensemble.html">
+         <img src="_static/collage/ensemble.png" width="95%/"/>
+        </a>
+       </div>
+      </div>
+      <p>
+       Please feel free to report
+       <a class="reference external" href="https://github.com/pyviz-topics/EarthML/issues">
+        issues
+       </a>
+       or
+       <a class="reference external" href="https://github.com/pyviz-topics/EarthML/">
+        contribute code
+       </a>
+       .
+      </p>
+      <div class="section" id="installation">
+       <h2>
+        Installation
+        <a class="headerlink" href="#installation" title="Permalink to this headline">
+         ¶
+        </a>
+       </h2>
+       <div class="section" id="step-1-install-a-miniconda-or-anaconda-environment">
+        <h3>
+         Step 1: Install a
+         <a class="reference external" href="http://conda.pydata.org/miniconda.html">
+          Miniconda
+         </a>
+         (or
+         <a class="reference external" href="https://www.continuum.io/downloads">
+          Anaconda
+         </a>
+         ) environment
+         <a class="headerlink" href="#step-1-install-a-miniconda-or-anaconda-environment" title="Permalink to this headline">
+          ¶
+         </a>
+        </h3>
+        <p>
+         Any Linux, Mac OS X, or Windows computer with a web browser (preferably
+Google Chrome) should be suitable. 16GB of RAM is required for some of
+the examples, but most will run fine in 4GB.
+        </p>
+        <p>
+         If you don’t already have conda on your machine, you can get it from
+         <a class="reference external" href="http://conda.pydata.org/miniconda.html">
+          Anaconda.com
+         </a>
+         , and then open
+a terminal window.
+        </p>
+        <p>
+         If you do have conda already, it’s a good idea to update it (running it
+twice to get the very latest) to ensure you have the latest version:
+        </p>
+        <div class="highlight-default notranslate">
+         <div class="highlight">
+          <pre><span></span><span class="o">&gt;</span> <span class="n">conda</span> <span class="n">update</span> <span class="n">conda</span>
+<span class="o">&gt;</span> <span class="n">conda</span> <span class="n">update</span> <span class="n">conda</span>
+</pre>
+         </div>
+        </div>
+       </div>
+       <div class="section" id="step-2-clone-the-earthml-git-repository">
+        <h3>
+         Step 2: Clone the EarthML git repository
+         <a class="headerlink" href="#step-2-clone-the-earthml-git-repository" title="Permalink to this headline">
+          ¶
+         </a>
+        </h3>
+        <div class="highlight-default notranslate">
+         <div class="highlight">
+          <pre><span></span><span class="o">&gt;</span> <span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">pyviz</span><span class="o">-</span><span class="n">topics</span><span class="o">/</span><span class="n">EarthML</span><span class="o">.</span><span class="n">git</span>
+<span class="o">&gt;</span> <span class="n">cd</span> <span class="n">EarthML</span>
+</pre>
+         </div>
+        </div>
+       </div>
+       <div class="section" id="step-3-install-and-activate-the-earthml-environment">
+        <h3>
+         Step 3: Install and activate the
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           earthml
+          </span>
+         </code>
+         environment
+         <a class="headerlink" href="#step-3-install-and-activate-the-earthml-environment" title="Permalink to this headline">
+          ¶
+         </a>
+        </h3>
+        <div class="highlight-default notranslate">
+         <div class="highlight">
+          <pre><span></span><span class="o">&gt;</span> <span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">-</span><span class="n">f</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
+<span class="o">&gt;</span> <span class="n">conda</span> <span class="n">activate</span> <span class="n">earthml</span>
+</pre>
+         </div>
+        </div>
+       </div>
+       <div class="section" id="step-4-run-the-notebook-server">
+        <h3>
+         Step 4: Run the notebook server
+         <a class="headerlink" href="#step-4-run-the-notebook-server" title="Permalink to this headline">
+          ¶
+         </a>
+        </h3>
+        <div class="highlight-default notranslate">
+         <div class="highlight">
+          <pre><span></span><span class="o">&gt;</span> <span class="n">cd</span> <span class="n">examples</span>
+<span class="o">&gt;</span> <span class="n">jupyter</span> <span class="n">notebook</span>
+</pre>
+         </div>
+        </div>
+       </div>
+       <div class="toctree-wrapper compound">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- END MAIN BODY OF DOCS ––––––––––––– -->
+  <footer class="footer">
+   <div class="footer-links">
+    <ul>
+     <li>
+      <span class="footer-title">
+       Links
+      </span>
+     </li>
+     <li>
+      <a href="#">
+       Introduction
+      </a>
+     </li>
+     <li>
+      <a href="tutorial/index.html">
+       Tutorial
+      </a>
+     </li>
+     <li>
+      <a href="topics/index.html">
+       Topics
+      </a>
+     </li>
+     <li>
+      <a href="FAQ.html">
+       FAQ
+      </a>
+     </li>
+     <li>
+      <a href="about.html">
+       About
+      </a>
+     </li>
+    </ul>
+    <ul>
+     <li>
+      <span class="footer-title">
+       Join Us
+      </span>
+     </li>
+     <li>
+      <a href="//github.com/pyviz-topics/EarthML">
+       Github
+      </a>
+     </li>
+    </ul>
+    <ul class="copyright">
+     <li>
+      2018 Anaconda
+     </li>
+    </ul>
+   </div>
+  </footer>
+  <!-- Google Analytics -->
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61554933-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <!-- MathJax Config -->
+  <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+  </script>
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+ </body>
+</html>
